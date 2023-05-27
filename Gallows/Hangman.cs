@@ -19,7 +19,7 @@ namespace Gallows
         private string word;
         private List<char> guessedLetters;
         private int attempts = 6;
-        //private string 
+        private string check;
 
         public void Play()
         {
