@@ -18,8 +18,7 @@ namespace Gallows
     };
         private string word;
         private List<char> guessedLetters;
-        private int attempts = 6;
-        private string check;
+        private int attempts = 6;   
 
         public void Play()
         {
@@ -60,6 +59,11 @@ namespace Gallows
                 if (attempts == 0)
                 {
                     Console.WriteLine("Game over! The word was: " + word);
+                }
+
+                if (guessedLetters.SequenceEqual(word))
+                {
+                    Console.WriteLine("You win");
                 }
 
                 Console.ReadKey();
