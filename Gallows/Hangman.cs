@@ -63,7 +63,9 @@ namespace Gallows
 
                 if (guessedLetters.SequenceEqual(word))
                 {
-                    Console.WriteLine("You win");
+                    Console.WriteLine("You win!");
+                    Console.ReadKey();
+                    break;
                 }
 
                 Console.ReadKey();
